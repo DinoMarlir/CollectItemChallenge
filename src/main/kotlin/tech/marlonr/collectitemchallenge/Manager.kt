@@ -38,7 +38,7 @@ class Manager: KSpigot() {
             val x = ThreadLocalRandom.current().nextInt(1, 25 + 1)
             val z = ThreadLocalRandom.current().nextInt(1, 25 + 1)
 
-            it.entity.teleport(Location(it.entity.location.world, x.toDouble(), it.entity.world.getHighestBlockAt(x, z).y.toDouble(), z.toDouble()))
+            it.entity.teleport(Location(it.entity.location.world, x.toDouble().plus(it.entity.location.x), it.entity.world.getHighestBlockAt(x, z).y.toDouble(), z.toDouble().plus(it.entity.location.z)))
         }
     }
 }

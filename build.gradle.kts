@@ -56,7 +56,7 @@ publishing {
             maven("https://maven.blueamethyst.me/releases") {
                 name = "blueamethystRepoRelease"
                 credentials(PasswordCredentials::class) {
-                    username = "marlon"
+                    username = System.getenv("reposilite.username")
                     password = System.getenv("reposilite.password")
                 }
                 authentication {
