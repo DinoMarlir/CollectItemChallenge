@@ -1,0 +1,6 @@
+name: CollectItemChallenge
+version: 1.0
+api-version: 1.19
+main: tech.marlonr.collectitemchallenge.Manager
+libraries:
+  - "net.axay:kspigot:1.19.2"
